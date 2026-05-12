@@ -17,6 +17,8 @@ class TrainDetailActivity : AppCompatActivity() {
     lateinit var db: DatabaseReference
     lateinit var platformText: TextView
 
+    var currentPlatform = "1"
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_train_detail)
@@ -44,7 +46,12 @@ class TrainDetailActivity : AppCompatActivity() {
                 ?: "Platform info unavailable"
 
         platformText.text =
-            "$platformInfo\nConfirmed by 7 users"
+            "$platformInfo\nConfirmed by 0 users"
+
+        // Extract platform number dynamically
+        // Example: "Platform: 5"
+        currentPlatform =
+            platformInfo.substringAfter("Platform:").trim()
 
         listenForUpdates()
 
@@ -147,7 +154,7 @@ class TrainDetailActivity : AppCompatActivity() {
         val ref =
             db.child("platforms")
                 .child("train1")
-                .child("platform2")
+                .child("platform$currentPlatform")
 
         ref.get().addOnSuccessListener {
 
@@ -163,7 +170,7 @@ class TrainDetailActivity : AppCompatActivity() {
         val ref =
             db.child("platforms")
                 .child("train1")
-                .child("platform2")
+                .child("platform$currentPlatform")
 
         ref.addValueEventListener(
             object : ValueEventListener {
@@ -175,12 +182,8 @@ class TrainDetailActivity : AppCompatActivity() {
                     val count =
                         snapshot.getValue(Int::class.java) ?: 0
 
-                    val currentText =
-                        intent.getStringExtra("platform")
-                            ?: "Platform info unavailable"
-
                     platformText.text =
-                        "$currentText\nConfirmed by $count users"
+                        "Platform: $currentPlatform\nConfirmed by $count users"
                 }
 
                 override fun onCancelled(
