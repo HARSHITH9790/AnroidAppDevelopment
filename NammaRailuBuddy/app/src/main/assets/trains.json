@@ -1,0 +1,41 @@
+[
+  {
+    "from": "Mandya",
+    "to": "KSR Bengaluru",
+    "name": "Mysuru Express",
+    "platform": "2",
+    "time": "7:30 AM"
+  },
+
+  {
+    "from": "Mandya",
+    "to": "Mysuru",
+    "name": "Chamundi Passenger",
+    "platform": "1",
+    "time": "9:15 AM"
+  },
+
+  {
+    "from": "Tumakuru",
+    "to": "KSR Bengaluru",
+    "name": "Bengaluru MEMU",
+    "platform": "4",
+    "time": "6:45 AM"
+  },
+
+  {
+    "from": "Birur",
+    "to": "Bengaluru",
+    "name": "Malnad Express",
+    "platform": "3",
+    "time": "10:00 PM"
+  },
+
+  {
+    "from": "Mysuru",
+    "to": "KSR Bengaluru",
+    "name": "Kaveri Express",
+    "platform": "5",
+    "time": "5:50 PM"
+  }
+]

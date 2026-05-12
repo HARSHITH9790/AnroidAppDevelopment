@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#111111">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- ROUTE -->
+
+        <TextView
+            android:id="@+id/routeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mandya → Mysuru"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- TRAIN NAME -->
+
+        <TextView
+            android:id="@+id/trainNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Passenger Train"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="25dp"/>
+
+        <!-- COACH LAYOUT -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="30dp">
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:text="Engine"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="#555555"/>
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:text="General"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:background="#FFD600"/>
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:text="Sleeper"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="#666666"/>
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:text="Ladies"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="#FF4081"/>
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:text="Guard"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="#555555"/>
+        </LinearLayout>
+
+        <!-- PLATFORM -->
+
+        <TextView
+            android:id="@+id/platformText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Platform 2 confirmed by 7 users"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="25dp"/>
+
+        <!-- CONFIRM BUTTON -->
+
+        <Button
+            android:id="@+id/platformBtn"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Confirm Platform"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:backgroundTint="#D9A6FF"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- ALARM BUTTON -->
+
+        <Button
+            android:id="@+id/alarmBtn"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Set Destination Alarm"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:backgroundTint="#F5B8FF"/>
+
+    </LinearLayout>
+
+</ScrollView>

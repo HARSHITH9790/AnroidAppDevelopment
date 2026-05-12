@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">NammaRailuBuddy</string>
+    <string name="select_journey">Select Your Journey</string>
+    <string name="find_trains">Find Trains</string>
+</resources>
