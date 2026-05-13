@@ -15,7 +15,9 @@ class StationSelectionActivity : AppCompatActivity() {
         "Mandya",
         "Mysuru",
         "KSR Bengaluru",
-        "Birur"
+        "Tumakuru",
+        "Birur",
+        "Bengaluru"
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {
